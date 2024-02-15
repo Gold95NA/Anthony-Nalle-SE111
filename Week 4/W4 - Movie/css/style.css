@@ -1,0 +1,163 @@
+@font-face {
+    font-family: One Piece;
+    src: url(one\ piece\ font.ttf);
+}
+h1{
+    font-family: One Piece;
+    color:rgb(221, 181, 81);
+    font-size: 35px;
+}
+h2{
+    font-family: One Piece;
+    color:rgb(221, 181, 81);
+    font-size: 15px;
+}
+
+h3{
+    font-family: One Piece;
+    color:rgb(221, 181, 81);
+    font-size: 12px;
+}
+
+ul{
+    color:rgb(221, 181, 81);
+    font-size: 15px;  
+}
+
+#Container{
+    width: 1000px;
+   
+    border: 2px solid white;
+    background-color: rgb(185, 39, 39);
+    
+}
+body,html{
+    display: flex;
+    justify-content: center;
+    background-color: lightskyblue;
+}
+#Nav{
+    text-align: center;
+    border: 1px solid white;
+}
+.nav-list{
+    list-style: none;
+    display: inline;
+    text-align: center;
+    padding: 15px;
+}
+#Header{
+    border: 2px solid white;
+    text-align: center;
+}
+#Content{
+    border: 1px solid white;
+    height: 1000px;
+    color: rgb(221, 181, 81);
+}
+.image-row{
+    display: flex;
+    justify-content: space-between; /* this will add equal space between each image */
+}
+#Footer{
+    border: 1px solid white;
+    text-align: center;
+    font-family: One Piece;
+    color: rgb(221, 181, 81);
+}
+.section-text{
+    width: 750px;
+    float: left;
+    padding-left: 20px;    
+}
+
+.review-text{
+    width: 500px;
+    float: left;
+    padding-left: 20px;
+}    
+
+img{
+    float: left;
+}
+
+.indeximage{
+    padding-left: 10px;
+}
+
+.imdblink{
+    padding-left: 300px;
+    color: aqua;
+}
+
+#section-header{
+    padding-left: 20px;
+    font-family: One Piece;
+}
+
+#author-date{
+    padding-left: 50px;
+    font-family: One Piece;
+}
+
+#image-text{
+    padding-left: 10px;
+    font-family: One Piece;
+}
+
+#info{
+    width: 750px;
+    float: left;
+    padding-left: 20px;
+    color: rgb(221, 181, 81);
+}
+
+#Character{
+    border: 1px solid white;
+    height: 200px;
+    color: rgb(221, 181, 81);
+    font-family: One Piece;
+}
+
+.gallery{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+}
+
+.center{
+    margin: 30px auto 0 210px;
+}
+
+.indexcenter{
+    margin: 30px auto 0 140px;
+}
+
+#contact-form{
+    width: 500px;
+    margin: auto;
+}
+
+.videos{
+    margin: 30px auto 0 200px;
+}
+
+a:link{
+    color: (lightskyblue);
+    text-decoration: none;
+    font-family: One Piece;
+    font-weight: bold;
+}
+
+a:visited{
+    color: rgb(75, 148, 179);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:active{
+    color: rgb(174, 217, 236);
+}
