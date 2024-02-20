@@ -134,6 +134,10 @@ img{
     margin: 30px auto 0 140px;
 }
 
+.footercenter{
+    margin: 30px auto 0 300px;
+}
+
 #contact-form{
     width: 500px;
     margin: auto;
