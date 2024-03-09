@@ -1,60 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--The type of font we are using-->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Tells the -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 6 | JavaScript Lab</title>
+    <meta name="author" content="Your Name Here">
+    <meta name="description" content="Default HTML Page for SE 111">
+    
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Week 5 | Tables and Forms</title>
 </head>
 <body>
-    <h1>Week 6 | JavaScript Lab</h1>
-    <p></p>
-    <button>Call Function</button>
-    <script>
-        //Your JavaScript Goes Here
-        var firstName = "Anthony";
-        var lastName = "Nalle" ;
-        var message = `Hello ${firstName} ${lastName}!`;
-        var para = "lorem ipsum"
-        //example of alert function
-        //alert(firstName + " " + lastName)
-        console.log(`${firstName} ${lastName}`);
-        //This should output message to page
-        function outputToPage(tag, msg, color){
-            document.querySelector(tag).innerHTML = message;
-            document.querySelector(tag).style.color = color;
-        }    
-
-        outputToPage("h1", message, "blue");
-        outputToPage("p", para, "green");
-
-        //Example of event handler
-        var dataPromptButton = document.querySelector("button");
-        dataPromptButton.addEventListener('click', dataPrompt);
-
-        function dataPrompt(){
-            alert(`My name is ${firstName} welcome to my program.`);
-            var yourName = prompt("Please tell me your name.");
-            alert(`Hello ${yourName}! Nice to meet you.`);
-            var yourLastName = prompt(`Please tell me your last name.`);
-            alert(`Your full name is ${yourName} ${yourLastName}!`);
-
-            var firstNumber = prompt("Please enter a number,");
-            var secondNumber = prompt("Please enter another number.");
-
-            var result = Number(firstNumber) * Number(secondNumber);
-
-            alert(`Here is your result: ${result}`);
-
-            var documentBody = document.querySelector("body");
-            var outputData = document.createElement("p");
-
-            outputData.innerHTML = `Your name is ${yourName} ${yourLastName}<br> The Result of your numbers is ${result}<br>Thank you from ${firstName} ${lastName}`;
-
-            documentBody.appendChild(outputData);
-
-        }
-    </script>
+    <!--Build your Table and Form here-->
     
 </body>
 </html>
