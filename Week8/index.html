@@ -30,107 +30,46 @@
   <div id="output">
 
   </div>
-  <!--The script tag should go after the HMTL, but inside of the body.-->
-  <!--JavaScript cannot find tags, if they are not parsed before the script runs-->
     
     <script>
-      
-    //Store the elements (tags) in variables
+       const firstInput = document.getElementById("first");
+        const lastInput = document.getElementById("last");
+        const submitButton = document.getElementById("button");
+        const outputDiv = document.getElementById("output");
 
-      var button = document.getElementById("button");
-      var first = document.getElementById("first");
-      var last = document.getElementById("last");
-      var output = document.getElementById("output");
-    //Make an array to store the people
+        
+        const people = [];
 
-      var people = [];
-      
-      
-    //Make the button clickable. When clicked it calls the calcAndDisplay function.
+        
+        submitButton.addEventListener("click", calcAndDisplay);
 
-      button.addEventListener("click", calcAndDisplay);
-
-
-    /*-----------------------------------------------------
-    Will add objects into the people array. 
-    Then will bubble sort the array and print each person to the screen.
-    The output should resemble: 
-      FIRST: Cersei
-      LAST: Lannister
-      _________________________
-      FIRST: Arya
-      LAST: Stark
-      _________________________
-      FIRST: Daenerys
-      LAST: Targaryen
-      _________________________
-    --------------------------------------------------------*///
-
-    function calcAndDisplay(e)
-    {
-      //Create an object called person.
-      //Add the following properties:
-          //1. first: will be a string that uses the first Input's value
-        //2. last: will be a string that uses the last Input's value
-      var person = {
-        first: first.value,
-        last: last.value
-      }//end of person object
-
-      //Add the person object into the people array by using the .push() array method.
-
-      people.push(person);
-      
-      //Bubble sort people on the last name
-      for(let i=0; i < people.length-1; i++)
-      {
-        for(let j=0; j < people.length-1; j++)
-        {
-          if(people[j].last > people[j+1].last)
-          {
-            let temp = people[j]
-            people[j] = people[j+1]
-            people[j+1] = temp
+        
+        function calcAndDisplay() {
+          
+          const person = {
+            first: firstInput.value,
+            last: lastInput.value,
           }
+         
+          people.push(person);
+
+          
+          people.sort((a, b) => a.last.localeCompare(b.last));
+
+          outputDiv.innerHTML = "";
+
+         
+          let output = "";
+          people.forEach((person) => {
+            for (let key in person) {
+                output += `${key.toUpperCase()}: ${person[key]}<br>`;
+            }
+            output += "_____________________<br>";
+          });
+
+          console.log(people);
+          outputDiv.innerHTML = output;
         }
-      }//end of bubble sort algorithm!
-
-      //console.log the people array to check that the people array is formatted correctly and is populated with the correct objects
-
-      console.log(people);
-
-      //create a variable called 'output' that has an empty string value stored to 
-
-      var output = "";
-
-      //Loop through the objects in the people array
-      for(let i=0; i < people.length; i++)
-      {
-        //Loop through each property in the object      
-        for(key in people[i])
-        {
-            output += key.toUpperCase() + ": " + people[i][key] + "<br>";
-        }
-        output += "<hr>";}
-                //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
-
-
-
-      }//end of loop going through people array to edit 'output'
-
-        //log the output string
-
-      console.log(output);
-      
-        //replace the outputDiv's inner HTML with the output string
-
-      output.innerHTML = output;
-	  calcAndDisplay()
-
-
-
-
-    
 
     </script>
 
