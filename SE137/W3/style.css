@@ -1,0 +1,48 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
+
+body,html{
+    background-color: #ccc;
+    height:100%;
+    margin:0;
+}
+body{
+    color: aqua;
+    min-height: 100%;
+}
+main{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 50px 300px 50px 50px;
+}
+header{
+    background-color: red;  
+}
+nav{
+    background-color: black;   
+}
+section{
+    background-color: #666;
+    display:grid;
+    grid-template-areas:
+    "aside article div"; 
+    align-items: stretch;  
+}
+article{
+    background-color: hotpink;
+    grid-area: article;  
+    align-self: flex-end;
+}
+div{
+    background-color: cyan; 
+    grid-area: div;  
+}
+aside{
+    background-color: yellow;
+    grid-area: aside;
+}
+footer{
+    background-color: black;
+}
