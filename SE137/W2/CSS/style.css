@@ -1,8 +1,80 @@
 @charset "UTF-8";
+@font-face {
+    font-family: Waiting for the Sunrise;
+    src: url(Fonts\WaitingfortheSunrise-Regular.ttf)
+}
+@font-face {
+    font-family: Roboto;
+    src: url(Fonts\Roboto-BoldItalic.ttf)
+}
+html{
 
+}
+body{
+    background-color: white;
+}
+main{
+    
+}
+header{
+
+}
+h1{
+    border-style: solid; border-color: black;
+    background-color: lightgreen;
+    text-align: center;
+    font-family: Waiting for the Sunrise;
+    
+}
+h2{
+    font-family: Roboto;
+}
+div{
+    
+}
+#nav{
+    border-style: solid;
+    text-align: center;
+    font-family: Roboto;
+}
+footer{
+    
+}
 .hide{
     display:none;
 }
-body{
-    background-color: lightgreen;
+.viewalways{
+    display:contents
+}
+#Bio{
+    border-style: solid;
+    font-family: Waiting for the Sunrise;
+    text-align: center;
+}
+#Ed{
+    border-style: solid;
+    padding-left: 10px;
+    text-align: center; 
+    list-style-position: inside;
+    font-family: Waiting for the Sunrise;
+}
+#Hobbies{
+    border-style: solid;
+    padding-left: 10px;
+    text-align: center;
+    list-style-position: inside;
+    font-family: Waiting for the Sunrise;
+    
+}
+img{
+    border-style: solid; border-color: lightgreen;
+    
+}
+ol{
+    text-align: left;
+    padding-left: 700px;
+}
+ul{
+    text-align: left;
+    padding-left: 650px;
 }
