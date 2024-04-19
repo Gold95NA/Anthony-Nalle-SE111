@@ -95,13 +95,14 @@ div{
 #Ed{
     border: solid; border-color: black;
     background-image: url("/SE137/W3/Images/school.jpg");
-   
+    background-size: cover;
     
     
 }
 #Hobbies{
    border: solid; border-color: black;
    background-image: url("/SE137/W3/Images/Martial+Arts.jpg");
+   background-size: cover;
    position: relative;
    left: -20px;
    
