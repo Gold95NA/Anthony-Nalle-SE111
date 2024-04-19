@@ -42,6 +42,8 @@ h2{
     width: 300px;
     align-content: center;
     padding-left: 10px;
+    position: relative;
+    left: 10px;
     
     
     
@@ -51,7 +53,7 @@ h2{
     border-left: 10px;
     border: solid;
     border-color: black;
-    width: 1460px;
+    width: 1475px;
     align-content: center;
     height: 55px;
     padding-left: 10px;
@@ -68,9 +70,13 @@ div{
 }
 #footer{
     background-color: rgba(54, 133, 48, 1.00);
-    text-align: center;
-    align-content: center;
     width: 1500px;
+    align-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    left: -20px;
+    text-align: center;
     
 }
 .hide{
@@ -96,6 +102,8 @@ div{
 #Hobbies{
    border: solid; border-color: black;
    background-image: url("/SE137/W3/Images/Martial+Arts.jpg");
+   position: relative;
+   left: -20px;
    
 }
 img{
@@ -129,7 +137,7 @@ a:active{
     border-left: 10px;
     border: solid;
     border-color: black;
-    width: 1460px;
+    width: 1475px;
     align-content: center;
     height: 145px;
     padding-left: 10px;
