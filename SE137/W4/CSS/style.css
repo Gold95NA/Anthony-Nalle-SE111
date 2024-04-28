@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+header{
+   border-style: solid;
+   border-color: black;
+   background-color: black;
+   font-style: normal; color: red;
+   padding-left: 20px;
+   vertical-align: text-bottom;
+   
+}
+h1{
+    
+}
+main{   
+    
+}
+section{
+   display:grid;
+   
+
+}
+#banner{
+    display: flex;
+    flex-direction: row;
+    background-image: url("Images/banner.png");
+    background-color: #cccccc;
+    height: 200px;
+    
+    
+    
+}
+#purchase{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    border: 2px;
+   
+    
+}
+#pennant{
+    display: flex;
+    flex-direction: row;
+    
+}
+#sign{
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+b{
+    font-style: normal; color: red;
+}
