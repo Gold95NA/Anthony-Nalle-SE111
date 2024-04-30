@@ -20,6 +20,7 @@ h2{
     border-left: 2px;
     border-right: 2px;
     height: 40px;
+    position: absolute;
 }
 #banner{
     border-style: solid;
@@ -73,19 +74,27 @@ h2{
 #one{
     font-style: normal; color: white;
     text-wrap: wrap;
+    transform: translate(0px, 50px);
+    
 }
 #price{
     font-style: normal; color: white;
     font-size: 40px;
     padding-left: 5px;
-    transform: translate(-10px, -100px);
+    transform: translate(-10px, -60px);
+    border-style: solid;
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+    position: absolute;
+    
 }
 #dvd{
-    
+    transform: translate(0px, 55px);
 }
 #amazon{
     padding-left: 5px;
-    transform: translate(-10px, -100px);
+    transform: translate(-10px, -70px);
 }
 #pennant{
     display: flex;
