@@ -1,9 +1,8 @@
 @charset "UTF-8";
 
-body{}
+body{}   
 main{
-    background-color: rgb(40, 40, 40);
-    
+    background-color: rgb(40, 40, 40);  
 }
 header{
     border-style: solid;
